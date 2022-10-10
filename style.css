@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+.contain {
+  width: 310px;
+  margin: 12rem auto;
+  background-color: white;
+  background-image: url("./images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 70%;
+  border-radius: 2rem;
+}
+.contain header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.contain header picture {
+  position: relative;
+}
+.contain header img {
+  position: absolute;
+  top: -13.5rem;
+  left: -9rem;
+  z-index: 10;
+  width: 18rem;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Kumbh Sans";
+}
+body ul {
+  padding: 2.5rem 2rem;
+}
+
+.faq {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+.faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.faq_question p {
+  font-size: 1.05rem;
+  margin: 0.2rem auto;
+  width: 100%;
+}
+.faq_answer {
+  height: 0;
+  overflow: hidden;
+  border-top: 0.3px solid hsl(240deg, 5%, 91%);
+  transition: all 0.3s ease-in;
+}
+
+.active {
+  height: auto;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

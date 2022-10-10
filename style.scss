@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$clr-txt1: hsl(238, 29%, 16%);
+$clr-txt2: hsl(14, 88%, 65%);
+
+
+$clr-bg1: hsl(273, 75%, 66%);
+$clr-bg2: hsl(240, 73%, 65%);
+
+$clr-neut-txt1: hsl(237, 12%, 33%);
+$clr-neut-txt2: hsl(240, 6%, 50%);
+
+$clr-neut1: hsl(240, 5%, 91%);
+
+$fnt: 'Kumbh Sans';
+
+$fnt-wgt1: 400;
+$fnt-wgt2: 700;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: $fnt, sans-serif;
+}
+body {
+    width: 100vw; 
+    height: 100vh;
+    background: linear-gradient($clr-bg1 , $clr-bg2);
+}
+.contain {
+    width: 310px;
+    margin: 12rem auto;
+    background-color: white;
+    background-image: url("./images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 70%;
+    border-radius: 2rem;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+        picture {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            top: -13.5rem;
+            left: -9rem;
+            z-index: 10;
+            width: 18rem;
+        }    
+    }
+
+}
+
+body {
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: $fnt-wgt2;
+        font-family: $fnt;
+    }
+
+    ul {
+        padding: 2.5rem 2rem;
+    }
+    
+}
+
+.faq {
+        list-style-type: none;
+        margin-bottom: 1rem;
+
+        &_question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            p {
+                font-size: 1.05rem;
+                margin: 0.2rem auto;
+                width: 100%;
+            }
+        }
+
+        &_answer {
+            height: 0;
+            overflow: hidden;
+            border-top: 0.3px solid $clr-neut1;
+            transition: all 0.3s ease-in;
+        }
+    }
+
+    .active {
+        height: auto;
+        border: none;
+    }
